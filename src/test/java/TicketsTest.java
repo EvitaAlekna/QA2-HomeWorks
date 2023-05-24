@@ -1,12 +1,15 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.v109.css.model.Value;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +19,8 @@ public class TicketsTest {
     private final By TO = By.id("bfrom");
     private final By GO_BTN = By.xpath(".//span[@class = 'gogogo']");
     private final By GET_PRICE_BTN = By.xpath(".//span[@onclick = 'setLang();']");
+    private final By FLIGHT_INFO = By.xpath(".//span[@class = 'bTxt']");
+
     private final By NEXT_FLIGHT = By.id("flight");
     private final By BOOK_BTN = By.id("book2");
     private final By SELECTED_SEAT = By.xpath(".//div[@onclick = 'seat(13)']");
@@ -103,8 +108,23 @@ public class TicketsTest {
         // Press Get Price link
         browser.findElement(GET_PRICE_BTN).click();
 
+        WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.numberOfElementsToBe(FLIGHT_INFO, 5));
+
+        List<WebElement> flightInfo = browser.findElements(FLIGHT_INFO);
+        Assertions.assertEquals(DEPARTURE_AIRPORT, flightInfo.get(0).getText(), "Wrong Departure Airport!");
+        Assertions.assertEquals(ARRIVAL_AIRPORT, flightInfo.get(1).getText(), "Wrong Arrival Airport!");
+
+        String name = flightInfo.get(2).getText();
+        Assertions.assertEquals(NAME, name.substring(0, name.length() - 1), "Wrong Name!");
+
+        Assertions.assertEquals(DEPARTURE_AIRPORT, flightInfo.get(3).getText(), "Wrong Departure Airport!");
+        Assertions.assertEquals(ARRIVAL_AIRPORT, flightInfo.get(4).getText(), "Wrong Arrival Airport!");
+
         // Press Book btn
         browser.findElement(BOOK_BTN).click();
+
+        wait.until(ExpectedConditions.numberOfElementsToBe(SELECTED_SEAT, 1));
 
         // Select seat Nr
         browser.findElement(SELECTED_SEAT).click();
@@ -112,13 +132,13 @@ public class TicketsTest {
         // Press book btn
         browser.findElement(BOOK_BTN3).click();
 
-        browser.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        wait.until(ExpectedConditions.numberOfElementsToBe(TEXT, 1));
 
         // Check if successful msg appears
         WebElement finalText = browser.findElement(TEXT);
         System.out.println(finalText.getText());
 
-        //test change
+
 
     }
 }
