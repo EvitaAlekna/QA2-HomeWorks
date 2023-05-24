@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32080193-1d21-4e15-b997-6217a94695f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FirstSeleniumTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyFirstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TicketsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithObjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/User.java" afterDir="false" />
+    <list default="true" id="32080193-1d21-4e15-b997-6217a94695f9" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/src/test/java/TicketsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicketsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="93a839d4-960d-4432-81cb-f873ab5d0869" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/37129/IdeaProjects/QA2-1st-EA"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/37129/IdeaProjects/QA2-1st-EA&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.TicketsTest">
     <configuration name="FirstSeleniumTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA2-1st-EA" />
@@ -131,6 +123,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679507843650</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1684942537876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684942537876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +143,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
