@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32080193-1d21-4e15-b997-6217a94695f9" name="Changes" comment="Test my change">
+    <list default="true" id="32080193-1d21-4e15-b997-6217a94695f9" name="Changes" comment="Homework for filling passengers description">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BaseFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TicketsTestOnPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TicketsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicketsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/37129/IdeaProjects/QA2-1st-EA&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/37129/IdeaProjects/qa2-MyFirstHomeWork-EA"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
     ]
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TicketsTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.TicketsTestOnPage.successTicketsBookCheck">
     <configuration name="FirstSeleniumTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA2-1st-EA" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,20 +78,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QA2-1st-EA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TicketsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA2-1st-EA" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TicketsTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketsTestOnPage.successTicketsBookCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA2-1st-EA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicketsTestOnPage" />
+      <option name="METHOD_NAME" value="successTicketsBookCheck" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketsTestOnPage.successTicketsBookCheck" />
         <item itemvalue="JUnit.TicketsTest" />
         <item itemvalue="JUnit.TicketsTest.successTicketsBookCheck" />
         <item itemvalue="JUnit.FirstSeleniumTests" />
         <item itemvalue="JUnit.FirstSeleniumTests.firstSeleniumTry" />
-        <item itemvalue="JUnit.MyFirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684942861233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Homework for filling passengers description">
+      <created>1684951357243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684951357243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +164,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Test my change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test my change" />
+    <MESSAGE value="Homework for filling passengers description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework for filling passengers description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
