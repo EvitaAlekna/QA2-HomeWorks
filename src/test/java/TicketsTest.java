@@ -4,14 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v109.css.model.Value;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.w3c.dom.Text;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class TicketsTest {
     //Testavije dannije kak i lokatori zhelateljno skladivatj sdesj
@@ -35,6 +34,7 @@ public class TicketsTest {
     private final By CHILDREN_COUNT = By.id("children");
     private final By LUGGAGE_COUNT = By.id("bugs");
     private final By TEXT = By.xpath(".//div[@class = 'finalTxt']");
+    private final By FLIGHT_PRICE = By.xpath(".//div[@id = 'response']/child::node()");
 
     private final String URL = "http://www.qaguru.lv:8089/tickets";
     private final String DEPARTURE_AIRPORT = "RIX";
@@ -47,6 +47,7 @@ public class TicketsTest {
     private final int ADULTS = 1;
     private final int CHILDREN = 2;
     private final int BUGS = 3;
+
 
     @Test
     public void successTicketsBookCheck() {
@@ -121,6 +122,13 @@ public class TicketsTest {
         Assertions.assertEquals(DEPARTURE_AIRPORT, flightInfo.get(3).getText(), "Wrong Departure Airport!");
         Assertions.assertEquals(ARRIVAL_AIRPORT, flightInfo.get(4).getText(), "Wrong Arrival Airport!");
 
+        WebElement responseElement = browser.findElement((By.id("response")));
+        String responseText = responseElement.getText();
+        String price = responseText;
+        String cutOut = price.substring(responseText.indexOf("for") + 4, responseText.indexOf(" EUR"));
+        System.out.println(cutOut);
+
+
         // Press Book btn
         browser.findElement(BOOK_BTN).click();
 
@@ -137,7 +145,6 @@ public class TicketsTest {
         // Check if successful msg appears
         WebElement finalText = browser.findElement(TEXT);
         System.out.println(finalText.getText());
-
 
 
     }
